@@ -1,0 +1,14 @@
+[font]
+normal = { family = "JetBrainsMono NF", style = "Regular" }
+# size = 11.0
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Alt", action = "toggleViMode" },
+]
+
+[env]
+TERM = "xterm-256color"
+
+[mouse]
+hide_when_typing = true
