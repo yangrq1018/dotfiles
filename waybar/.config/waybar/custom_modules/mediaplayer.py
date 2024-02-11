@@ -68,6 +68,8 @@ class PlayerManager:
     def write_output(self, text, player):
         logger.debug(f"Writing output: {text}")
 
+        # The "class" attribute can be used to determine icon for the player
+        # for instance name, use player.props.player_instance
         output = {"text": text,
                   "class": "custom-" + player.props.player_name,
                   "alt": player.props.player_name}
@@ -124,10 +126,12 @@ class PlayerManager:
             track_info = title
 
         if track_info:
+            # I inverted the icon here
+            # a pause means the status is playing
             if player.props.status == "Playing":
-                track_info = " " + track_info
-            else:
                 track_info = " " + track_info
+            else:
+                track_info = " " + track_info
         # only print output if no other player is playing
         current_playing = self.get_first_playing_player()
         if current_playing is None or current_playing.props.player_name == player.props.player_name:
