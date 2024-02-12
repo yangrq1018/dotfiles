@@ -39,7 +39,7 @@ d)  # decrease the backlight by 5%
         # decrease the backlight by 5%
         brightnessctl set 5%-
     fi
-    send_notification
+    # send_notification
     ;;
 *)  # print error
     print_error ;;
