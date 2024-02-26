@@ -11,3 +11,5 @@
 	defaultBranch = master
 [rebase]
 	rebaseMerges = true
+[core]
+	editor = nvim
