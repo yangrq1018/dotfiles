@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # wallpaper var
-EnableWallDcol=0
+# EnableWallDcol=0
 ConfDir="${XDG_CONFIG_HOME:-$HOME/.config}"
 # ThemeCtl="$ConfDir/hypr/theme.ctl"
 
@@ -28,16 +28,16 @@ pkg_installed()
     fi
 }
 
-get_aurhlpr()
-{
-    if pkg_installed yay
-    then
-        aurhlpr="yay"
-    elif pkg_installed paru
-    then
-        aurhlpr="paru"
-    fi
-}
+# get_aurhlpr()
+# {
+#     if pkg_installed yay
+#     then
+#         aurhlpr="yay"
+#     elif pkg_installed paru
+#     then
+#         aurhlpr="paru"
+#     fi
+# }
 
 # check(){
 #     local Pkg_Dep=$(for PkgIn in "$@"; do ! pkg_installed $PkgIn && echo "$PkgIn"; done)

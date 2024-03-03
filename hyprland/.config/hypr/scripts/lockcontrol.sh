@@ -2,5 +2,6 @@
 
 # Check if swaylock is running
 if ! pgrep -x "swaylock" > /dev/null; then
- swaylock --debug --trace >> $HOME/.swaylock/swaylock.log 2>&1
+ # swaylock --debug --trace >> $HOME/.swaylock/swaylock.log 2>&1
+ swaylock
 fi
