@@ -91,6 +91,15 @@ tooltip {
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+/**
+ * Keep the network module in (relatively) constant width, when the
+ * bandwidth changes. We currently don't have a floating
+ * point number format interface in waybar to achieve that.
+ */
+#network {
+  min-width: 180px;
+}
+
 #backlight,
 #battery,
 #bluetooth,
