@@ -12,9 +12,9 @@
 
   // positions generated based on config.ctl //
 
-  "modules-left": ["custom/l_end", "custom/power", "custom/r_end", "custom/l_end", "hyprland/workspaces", "custom/r_end", "custom/l_end", "tray", "custom/media", "custom/r_end"],
+  "modules-left": ["custom/l_end", "custom/power", "battery", "custom/r_end", "custom/l_end", "hyprland/workspaces", "custom/r_end", "custom/l_end", "tray", "custom/media", "custom/r_end"],
   "modules-center": ["custom/l_end", "clock", "custom/r_end"],
-  "modules-right": ["custom/l_end", "battery", "cpu", "memory", "temperature", "custom/r_end", "custom/l_end", "backlight", "network", "bluetooth", "pulseaudio", "pulseaudio#microphone", "custom/r_end"],
+  "modules-right": ["custom/l_end", "cpu", "memory", "temperature", "disk", "custom/r_end", "custom/l_end", "backlight", "network", "bluetooth", "pulseaudio", "pulseaudio#microphone", "custom/r_end"],
 
   "cpu": {
     "format": " {usage}%",
@@ -127,6 +127,13 @@
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  },
+
+  "disk": {
+    "interval": 10,
+    "format": "💾 {used}",
+    "tooltip": true,
+    "tooltip-format": "{used} out of {total}"
   },
 
   "backlight": {
