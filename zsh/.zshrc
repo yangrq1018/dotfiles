@@ -78,13 +78,27 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #
+# Plugin z remembers your recently visited directories,
+# cd into them or complete it.
+#
 # Plugin zsh-autosuggestions provides fish-like autosuggestions for zsh.
 # See https://github.com/zsh-users/zsh-autosuggestions
+#
+# Plugin fzf is a command line fuzzy file finder
+# install via pacman -S fzf
 plugins=(
   git
   z
   zsh-autosuggestions
+  fzf
 )
+
+# customize the cd ** completion
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
+}
+
 
 source $ZSH/oh-my-zsh.sh
 
