@@ -88,7 +88,7 @@
 
   "clock": {
     "format": "{:%H:%M %a}",
-    "format-alt": "{:󰃭 %Y/%m/%d}",
+    "format-alt": "󰃭 {:%R %Y/%m/%d}",
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "month",
@@ -147,12 +147,13 @@
 
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "󰤨 {essid} {bandwidthTotalBytes}",
+    "format-wifi": "{icon} {essid} {bandwidthTotalBytes}",
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
     "format-ethernet": "󱘖 Wired {bandwidthTotalBytes}",
     "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
     "format-linked": "󱘖 {ifname} (No IP)",
     "format-disconnected": " Disconnected",
-    "format-alt": "󰤨 {signalStrength}%",
+    "format-alt": "Signal {signalStrength}%",
     "interval": 5
   },
 
