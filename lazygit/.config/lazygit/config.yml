@@ -1,0 +1,4 @@
+gui:
+  scrollHeight: 5 # how many lines you scroll by
+  scrollPastBottom: false # enable scrolling past the bottom
+promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
