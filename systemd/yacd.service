@@ -1,0 +1,10 @@
+[Unit]
+Description=YACD
+After=clash.service
+
+[Service]
+ExecStart=/usr/bin/serve /home/martin/.config/yacd/public
+WorkingDirectory=/home/martin/.config/yacd/
+
+[Install]
+WantedBy=default.target

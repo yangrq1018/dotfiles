@@ -1,0 +1,12 @@
+[Unit]
+Description=Swaylock on system sleep
+Before=sleep.target
+
+[Service]
+User=martin
+Type=exec
+ExecStart=/home/martin/.config/hypr/scripts/lockcontrol.sh
+Environment=WAYLAND_DISPLAY=wayland-1 XDG_RUNTIME_DIR=/run/user/1000
+
+[Install]
+WantedBy=sleep.target

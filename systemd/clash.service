@@ -1,0 +1,11 @@
+[Unit]
+Description=Clash
+After=network-online.target
+
+[Service]
+Type=exec
+ExecStart=/home/martin/.config/clash/clash-premium -f config.yml -d .
+WorkingDirectory=/home/martin/.config/clash/
+
+[Install]
+WantedBy=default.target
