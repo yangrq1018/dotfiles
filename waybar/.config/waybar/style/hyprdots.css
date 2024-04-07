@@ -96,9 +96,9 @@ tooltip {
  * bandwidth changes. We currently don't have a floating
  * point number format interface in waybar to achieve that.
  */
-#network {
-  min-width: 180px;
-}
+/* #network { */
+/*   min-width: 180px; */
+/* } */
 
 #backlight,
 #battery,

@@ -130,9 +130,11 @@ source $ZSH/oh-my-zsh.sh
 
 alias ra=ranger
 alias lg=lazygit
-alias nv=nvim
-alias ta="tmux a"
+alias tatt="tmux a"
+alias tnew="tmux new"
 alias condact='conda activate'
+
+# bluetooth keyboard connect/disconnect
 alias conkbd='bluetoothctl connect 5B:30:04:01:56:1E'
 alias diskbd='bluetoothctl disconnect 5B:30:04:01:56:1E'
 

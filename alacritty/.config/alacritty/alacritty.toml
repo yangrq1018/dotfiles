@@ -1,6 +1,6 @@
 [font]
 normal = { family = "JetBrainsMono NF", style = "Regular" }
-# size = 11.0
+size = 12
 
 [keyboard]
 bindings = [
