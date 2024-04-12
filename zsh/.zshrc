@@ -138,12 +138,15 @@ alias condact='conda activate'
 alias conkbd='bluetoothctl connect 5B:30:04:01:56:1E'
 alias diskbd='bluetoothctl disconnect 5B:30:04:01:56:1E'
 
-export http_proxy=http://127.0.0.1:7890
-export https_proxy=http://127.0.0.1:7890
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
 
 export EDITOR=nvim
 # add golang package bin to path
-export PATH=$PATH:/home/martin/go/bin
+# Avoid adding go/bin multiple times in tmux sessions
+if [[ -z $TMUX ]]; then
+  export PATH=$PATH:/home/martin/go/bin
+fi
 
 # zsh completion refresh
 zstyle ':completion:*' rehash true
