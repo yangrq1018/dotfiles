@@ -1,10 +1,11 @@
 [font]
 normal = { family = "JetBrainsMono NF", style = "Regular" }
-size = 12
+size = 14
 
 [keyboard]
+# for default alacritty bindings, check :Man alacritty-bindings
 bindings = [
-  { key = "V", mods = "Alt", action = "toggleViMode" },
+  { key = "V", mods = "Alt", action = "ToggleViMode" },
 ]
 
 [env]
