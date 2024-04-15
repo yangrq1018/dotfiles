@@ -1,4 +1,9 @@
 #!/usr/bin/env /usr/bin/python3
+# the Shebang explicitly calls system python
+# if you have anaconda python installed it could override on your PATH
+# and will not work. The gi library is installed to system paths like
+# usr/lib/python3.11/site-packages/gi/. Anaconda can not see it.
+
 """
 Dependencies:
 pacman -S python-gobject playerctl

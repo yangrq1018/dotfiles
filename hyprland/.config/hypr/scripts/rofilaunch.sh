@@ -2,9 +2,9 @@
 
 # rofi action
 case $1 in
-    d)  r_mode="drun" ;; 
-    w)  r_mode="window" ;;
-    f)  r_mode="filebrowser" ;;
+    d)  r_mode="drun" ;;  # Launch applications based on desktop files
+    w)  r_mode="window" ;;  # Switch between windows
+    f)  r_mode="filebrowser" ;;  # A simple file browser
     h)  echo -e "rofilaunch.sh [action]\nwhere action,"
         echo "d :  drun mode"
         echo "w :  window mode"
