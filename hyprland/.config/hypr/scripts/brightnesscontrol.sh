@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-ScrDir=`dirname "$(realpath "$0")"`
-source $ScrDir/globalcontrol.sh
-
 function print_error
 {
 cat << "EOF"
