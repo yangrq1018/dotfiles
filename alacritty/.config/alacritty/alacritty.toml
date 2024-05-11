@@ -1,6 +1,14 @@
 [font]
-normal = { family = "JetBrainsMono NF", style = "Regular" }
-size = 14
+# use JetBrainsMono NF/NFM/NFP
+# pacman package: ttf-jetbrains-mono-nerd
+# multiple styles are available, like 'Italic', 'Light', 'Bold'...
+# normal = { family = "JetBrainsMono NF", style = "Light" }
+# size = 14
+
+# another font CodeNewRoman is a good choice
+# pacman package: otf-codenewroman-nerd
+normal = { family = "CodeNewRoman Nerd Font", style = "Regular" }
+size = 16
 
 [keyboard]
 # for default alacritty bindings, check :Man alacritty-bindings
