@@ -28,3 +28,10 @@ stow --target=$HOME --delete package
 Note: instead of `*`, `*/` is used because the repo also contains a `README.md`
 file, and we only want to install directories that are `packages` (like `tmux`)
 in repo root.
+
+## Ignore Lists
+Like git, Stow has its way to ignore files from installing. Stow looks for `.stow-local-ignore`
+and `.stow-global-ignore` files, for package-local and global settings. The ignore file's syntax
+is similar to .gitignore file. If neither of these files exist, it uses a built-in default list,
+which ignores `\.git` and `\.gitignore`, etc. You can safely place .gitignore inside a package,
+it won't pollute your home directory.
