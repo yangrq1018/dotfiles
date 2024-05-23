@@ -1,0 +1,11 @@
+# This can assist Rg to grep in certain hidden directories
+# It makes no difference to git at all
+# The rg manual makes it clear .gitignore, .ignore and .rgignore
+# are respected.
+
+# could negate some folders
+!/hyprland/.config/
+!/waybar/.config/
+
+# negate everything
+# !*
