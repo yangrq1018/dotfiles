@@ -241,9 +241,9 @@
   "custom/media": {
     "format": "{icon} {}",
     "return-type": "json",
-    "on-click": "playerctl play-pause --player spotify",
-    "on-click-right": "playerctl next --player spotify",
-    "on-click-middle": "playerctl previous --player spotify",
+    "on-click": "playerctl play-pause --player spotify,spotifyd",
+    "on-click-right": "playerctl next --player spotify,spotifyd",
+    "on-click-middle": "playerctl previous --player spotify,spotifyd",
     "max-length": 40,
     "format-icons": {
         "spotify": "",
