@@ -7,5 +7,5 @@
 
 swayidle -w \
   timeout 300 'pgrep -x swaylock || swaylock -f' \
-  timeout 600 'hyprctl dispatch dpms off' \
-  resume 'hyprctl dispatch dpms on'
+  timeout 600 'hyprctl dispatch dpms off eDP-1' \
+  resume 'hyprctl dispatch dpms on eDP-1'
