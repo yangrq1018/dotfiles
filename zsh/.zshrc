@@ -130,23 +130,21 @@ source $ZSH/oh-my-zsh.sh
 
 alias ra=ranger
 alias lg=lazygit
-alias tatt="tmux a"
-alias tnew="tmux new"
-alias condact='conda activate'
-
-# bluetooth keyboard connect/disconnect
-alias conkbd='bluetoothctl connect 5B:30:04:01:56:1E'
-alias diskbd='bluetoothctl disconnect 5B:30:04:01:56:1E'
 
 export http_proxy="http://127.0.0.1:7890"
 export https_proxy="http://127.0.0.1:7890"
 
 export EDITOR=nvim
-# add golang package bin to path
+
 # Avoid adding go/bin multiple times in tmux sessions
 if [[ -z $TMUX ]]; then
+  # Add golang package bin to PATH
   export PATH=$PATH:/home/martin/go/bin
 fi
+
+
+# Connect RDP to the cloud Windows server
+alias rdpwin='xfreerdp /u:Administrator /p:$(pass rdp/121.11.114.8) /v:121.11.114.8 /size:1920x1080'
 
 # zsh completion refresh
 zstyle ':completion:*' rehash true
