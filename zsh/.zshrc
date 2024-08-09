@@ -142,6 +142,11 @@ if [[ -z $TMUX ]]; then
   export PATH=$PATH:/home/martin/go/bin
 fi
 
+# For pipx
+export PATH=$PATH:/home/martin/.local/bin
+
+# For bee/data_ifind
+export BEE_DATA_IFIND_PATH=/home/martin/dev/bee/dat/
 
 # Connect RDP to the cloud Windows server
 alias rdpwin='xfreerdp /u:Administrator /p:$(pass rdp/121.11.114.8) /v:121.11.114.8 /size:1920x1080'
