@@ -136,14 +136,15 @@ export https_proxy="http://127.0.0.1:7890"
 
 export EDITOR=nvim
 
-# Avoid adding go/bin multiple times in tmux sessions
+# Avoid adding some paths to PATH multiple times in tmux sessions
 if [[ -z $TMUX ]]; then
-  # Add golang package bin to PATH
+  # Add golang package bin
   export PATH=$PATH:/home/martin/go/bin
+
+  # For pipx
+  export PATH=$PATH:/home/martin/.local/bin
 fi
 
-# For pipx
-export PATH=$PATH:/home/martin/.local/bin
 
 # For bee/data_ifind
 export BEE_DATA_IFIND_PATH=/home/martin/dev/bee/dat/
