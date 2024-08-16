@@ -1,0 +1,11 @@
+ignore-empty-password
+indicator-idle-visible
+
+color=000000
+indicator-radius=100
+indicator-thickness=7
+ring-color=ffa6c2
+key-hl-color=5c5f77
+line-color=00000000
+inside-color=00000088
+separator-color=00000000
