@@ -146,11 +146,9 @@ if [[ -z $TMUX ]]; then
 fi
 
 
-# For bee/data_ifind
-export BEE_DATA_IFIND_PATH=/home/martin/dev/bee/dat/
-
-# Connect RDP to the cloud Windows server
-alias rdpwin='xfreerdp /u:Administrator /p:$(pass rdp/121.11.114.8) /v:121.11.114.8 /size:1920x1080'
+# Connect RDP to windows servers
+alias rdp1='xfreerdp /u:Administrator /p:$(pass rdp/121.11.114.8) /v:121.11.114.8 /size:1920x1080'
+alias rdp2='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/192.168.0.184) /v:192.168.0.184 /sec:rdp /size:1920x1080'
 
 # zsh completion refresh
 zstyle ':completion:*' rehash true
