@@ -145,6 +145,9 @@ if [[ -z $TMUX ]]; then
   export PATH=$PATH:/home/martin/.local/bin
 fi
 
+if [[ -f "$HOME/.zsh_local" ]]; then
+  source "$HOME/.zsh_local"
+fi
 
 # Connect RDP to windows servers
 alias rdp1='xfreerdp /u:Administrator /p:$(pass rdp/121.11.114.8) /v:121.11.114.8 /size:1920x1080'
