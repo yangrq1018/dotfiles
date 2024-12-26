@@ -150,8 +150,9 @@ if [[ -f "$HOME/.zsh_local" ]]; then
 fi
 
 # Connect RDP to windows servers
-alias rdp1='xfreerdp /u:Administrator /p:$(pass rdp/121.11.114.8) /v:121.11.114.8 /size:1920x1080'
+alias rdp1='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/121.11.114.8) /v:121.11.114.8 /size:1920x1080'
 alias rdp2='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/192.168.0.184) /v:192.168.0.184 /sec:rdp /size:1920x1080'
+alias rdp3='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/47.107.249.54) /v:47.107.249.54 /size:1920x1080'
 
 # zsh completion refresh
 zstyle ':completion:*' rehash true
