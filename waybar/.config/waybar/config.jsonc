@@ -258,7 +258,7 @@
     "format": "{}",
     "interval": 600,
     "return-type": "json",
-    "exec": "$HOME/waybar-crypto/waybar_crypto.py"
+    "exec": "$HOME/dev/waybar-crypto/waybar_crypto.py"
   },
   "custom/cbond_index": {
     "format": "{}",
