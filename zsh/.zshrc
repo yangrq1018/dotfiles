@@ -100,7 +100,7 @@ _fzf_compgen_dir() {
 }
 
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -175,7 +175,10 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Starship prompt
+eval "$(starship init zsh)"
 
 # Lines added by pyenv
 export PYENV_ROOT="$HOME/.pyenv"
