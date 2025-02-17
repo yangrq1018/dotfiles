@@ -116,6 +116,9 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+# Always use emacs keymap
+bindkey -e
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
