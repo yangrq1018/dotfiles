@@ -177,6 +177,16 @@ unset __conda_setup
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# preserve zsh history across sessions
+source ~/.oh-my-zsh/lib/history.zsh
+
+# Pager
+export PAGER=less
+export LESS='R'
+
+# zsh-autosuggestions
+source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Starship prompt
 eval "$(starship init zsh)"
 
