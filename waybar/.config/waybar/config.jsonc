@@ -264,6 +264,6 @@
     "format": "{}",
     "interval": 60,
     "return-type": "json",
-    "exec": "$HOME/dev/waybar-cbond-index/main.py"
+    "exec": "/home/martin/.cache/pypoetry/virtualenvs/waybar-cbond-index--xhz-acO-py3.13/bin/wci"
   }
 }

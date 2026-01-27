@@ -109,12 +109,8 @@ _fzf_compgen_dir() {
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
+# Preferred editor
+export EDITOR='nvim'
 
 # Always use emacs keymap
 bindkey -e
@@ -144,6 +140,9 @@ if [[ -z $TMUX ]]; then
 
   # For pipx
   export PATH=$PATH:/home/martin/.local/bin
+
+  # For cargo
+  export PATH=$PATH:/home/martin/.cargo/bin
 fi
 
 if [[ -f "$HOME/.zsh_local" ]]; then
@@ -151,10 +150,9 @@ if [[ -f "$HOME/.zsh_local" ]]; then
 fi
 
 # Connect RDP to windows servers
-alias rdp1='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/121.11.114.8) /v:121.11.114.8 /size:1920x1080'
-alias rdp2='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/192.168.0.184) /v:192.168.0.184 /sec:rdp /size:1920x1080'
-alias rdp3='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/47.107.249.54) /v:47.107.249.54 /size:1920x1080'
-alias rdp4='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/8.134.70.39) /v:8.134.70.39 /size:1920x1080'
+alias rdpsmartx='env -u http_proxy -u https_proxy xfreerdp /u:Administrator /p:$(pass rdp/8.134.70.39) /v:8.134.70.39 /size:1920x1080'
+
+alias cbondindex='/home/martin/dev/waybar-cbond-index/main.py'
 
 # zsh completion refresh
 zstyle ':completion:*' rehash true
@@ -196,3 +194,5 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init - zsh)"
 
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+alias claude="/home/martin/.claude/local/claude"

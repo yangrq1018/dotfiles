@@ -2,7 +2,7 @@
 Description=Start docker easy-connect container
 
 [Service]
-ExecStart=/usr/bin/docker start laughing_cohen
+ExecStart=/usr/bin/docker start easyconnect_xtp
 Type=oneshot
 Restart=no
 
